@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useRef, useEffect, useState } from 'react';
-import './cards.css';
+import { useRef, useEffect, useState } from "react";
+import "./cards.css";
 
-import { motion, useInView } from "framer-motion"
-import { transition } from '@/utils/Transition';
+import { motion, useInView } from "framer-motion";
+import { transition } from "@/utils/Transition";
 
 export default function Cards() {
   const video1Ref = useRef<HTMLVideoElement>(null);
@@ -65,14 +65,14 @@ export default function Cards() {
         }
       };
 
-      v1.addEventListener('timeupdate', onTimeUpdate1);
-      v2.addEventListener('timeupdate', onTimeUpdate2);
-      v3.addEventListener('timeupdate', onTimeUpdate3);
+      v1.addEventListener("timeupdate", onTimeUpdate1);
+      v2.addEventListener("timeupdate", onTimeUpdate2);
+      v3.addEventListener("timeupdate", onTimeUpdate3);
 
       return () => {
-        v1.removeEventListener('timeupdate', onTimeUpdate1);
-        v2.removeEventListener('timeupdate', onTimeUpdate2);
-        v3.removeEventListener('timeupdate', onTimeUpdate3);
+        v1.removeEventListener("timeupdate", onTimeUpdate1);
+        v2.removeEventListener("timeupdate", onTimeUpdate2);
+        v3.removeEventListener("timeupdate", onTimeUpdate3);
       };
     }
   }, []);
@@ -111,17 +111,17 @@ export default function Cards() {
   }, [readyToPlay.video4, isInView4]);
 
   return (
-    <div className='section cards'>
+    <div className="section cards">
       <div className="section-heading">
         <h2 className="section-title">Oui, Papillon fait tout ça.</h2>
         <p className="section-description">
-          Complète, et avec style. Papillon regroupe toutes les fonctionnalités nécessaires à la gestion de la vie scolaire, dans une interface pensée pour les élèves et les parents.
+          Complète, et avec style. Papillon regroupe toutes les fonctionnalités
+          nécessaires à la gestion de la vie scolaire, dans une interface pensée
+          pour les élèves et les parents.
         </p>
       </div>
 
-      <div
-        className='cards-list'
-      >
+      <div className="cards-list">
         <motion.div
           ref={card1Ref}
           className="card"
@@ -129,17 +129,15 @@ export default function Cards() {
           whileInView={cardAnimate}
           transition={transition(0)}
         >
-          <video
-            ref={video1Ref}
-            muted
-            playsInline
-            className="card-video"
-          >
+          <video ref={video1Ref} muted playsInline className="card-video">
             <source src="/video/edt.mp4" type="video/mp4" />
           </video>
-          <h3 className="card-title">Emploi du temps actualisé en temps réel</h3>
+          <h3 className="card-title">
+            Emploi du temps actualisé en temps réel
+          </h3>
           <p className="card-description">
-            Consultez votre emploi du temps en un clin d'œil, avec une interface claire et intuitive.
+            Consulte ton emploi du temps en un clin d'œil, avec une interface
+            claire et intuitive.
           </p>
         </motion.div>
 
@@ -150,17 +148,15 @@ export default function Cards() {
           whileInView={cardAnimate}
           transition={transition(0.1)}
         >
-          <video
-            ref={video2Ref}
-            muted
-            playsInline
-            className="card-video"
-          >
+          <video ref={video2Ref} muted playsInline className="card-video">
             <source src="/video/profil.mp4" type="video/mp4" />
           </video>
-          <h3 className="card-title">Profil et fonctionnalités de l'établissement</h3>
+          <h3 className="card-title">
+            Profil et fonctionnalités de l'établissement
+          </h3>
           <p className="card-description">
-            Ne vous perdez plus ! Retrouvez le profil de votre établissement, ses actualités, les cartes et bien plus encore.
+            Ne te perds plus ! Retrouve le profil de ton établissement, ses
+            actualités, les cartes et bien plus encore.
           </p>
         </motion.div>
 
@@ -171,17 +167,13 @@ export default function Cards() {
           whileInView={cardAnimate}
           transition={transition(0.2)}
         >
-          <video
-            ref={video3Ref}
-            muted
-            playsInline
-            className="card-video"
-          >
+          <video ref={video3Ref} muted playsInline className="card-video">
             <source src="/video/personnalisation.mp4" type="video/mp4" />
           </video>
           <h3 className="card-title">Personnalisation avancée du contenu</h3>
           <p className="card-description">
-            Adaptez l'application à vos besoins avec des options de personnalisation poussées.
+            Adapte l'application à tes besoins avec des options de
+            personnalisation poussées.
           </p>
         </motion.div>
 
@@ -192,20 +184,18 @@ export default function Cards() {
           whileInView={cardAnimate}
           transition={transition(0.3)}
         >
-          <video
-            ref={video4Ref}
-            muted
-            playsInline
-            className="card-video"
-          >
+          <video ref={video4Ref} muted playsInline className="card-video">
             <source src="/video/ai.mp4" type="video/mp4" />
           </video>
-          <h3 className="card-title">IA personnelle qui comprend vos devoirs</h3>
+          <h3 className="card-title">
+            IA personnelle qui comprend tes devoirs
+          </h3>
           <p className="card-description">
-            Papillon Magic vous aide à organiser et gérer vos devoirs grâce à une intelligence artificielle.
+            Papillon Magic t'aide à organiser et gérer tes devoirs grâce à une
+            intelligence artificielle.
           </p>
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
