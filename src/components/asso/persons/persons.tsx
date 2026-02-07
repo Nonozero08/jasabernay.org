@@ -9,7 +9,7 @@ export default function Persons() {
       firstname: "Vince",
       lastname: "Linise",
       role: "Président",
-      description: "Fondateur et président du projet, touche un peu a tout ce qui parle Papillon.",
+      description: "Fondateur et président du projet, il touche un peu a tout ce qui parle Papillon.",
       link: "https://www.linkedin.com/in/vincelinise/",
       image: "/people/ecnivtwelve.jpg"
     },
@@ -17,34 +17,34 @@ export default function Persons() {
       firstname: "Lucas",
       lastname: "Lavajo",
       role: "Vice-président",
-      description: "Vice-président, trésorier et early-adopter du projet. Voyons le comme le business angel.",
+      description: "Lucas à rejoint Papillon à ses débuts et participe activement à la direction du projet.",
       image: "/people/tryon.jpg"
-    },
-    {
-      firstname: "Raphaël",
-      lastname: "Schroder",
-      role: "Trésorier adjoint",
-      description: "Grand génie du mal et du code, c'est lui à qui on refile les tâches ingrates.",
-      image: "/people/raphckrman.jpg"
     },
     {
       firstname: "Tom",
       lastname: "Hélière",
-      role: "Secrétaire",
-      description: "Artiste du projet, il s'occupe de l'identité visuelle de Papillon.",
+      role: "Designer UI/UX",
+      description: "Artiste du projet, il s'occupe de l'identité visuelle et de l'interface de Papillon.",
       image: "/people/tomhlr.jpg"
+    },
+    {
+      firstname: "Raphaël",
+      lastname: "Schroder",
+      role: "Développeur",
+      description: "Grand génie du mal et du code, c'est lui à qui on refile les tâches ingrates.",
+      image: "/people/raphckrman.jpg"
     },
     {
       firstname: "Rémy",
       lastname: "Godet",
-      role: "Secrétaire adjoint",
+      role: "Développeur",
       description: "Visionnaire du code et du design, il met un coup de pinceaux aux fonctionnalités.",
       image: "/people/remygdt.jpg"
     },
     {
       firstname: "Mael",
       lastname: "Duret",
-      role: "Membre",
+      role: "Développeur",
       description: 'Il touche à tout… surtout quand il veut "juste voir ce que ça fait".',
       image: "/people/ryzenixx.jpg"
     }

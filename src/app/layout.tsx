@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        width: 1280,
+        height: 720,
         alt: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
       },
     ],

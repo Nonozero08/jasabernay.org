@@ -75,7 +75,7 @@ export default function Hero() {
 				<div className="hero-image-container">
 					<Image
 						src="/home-hand.png"
-						alt="Papillon"
+						alt=""
 						width={1200}
 						height={1200}
 						className="hero-image"
