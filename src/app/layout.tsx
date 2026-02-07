@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
     description: "L’application pensée pour l’école d’aujourd’hui & de demain",
-    url: "https://getpapillon.app",
+    url: "https://papillon.bzh",
     siteName: "Papillon",
     images: [
       {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
+  metadataBase: new URL("https://papillon.bzh"),
   twitter: {
     card: "summary_large_image",
     title: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
