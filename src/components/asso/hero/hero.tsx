@@ -58,7 +58,7 @@ export default function Hero() {
           src="/people.png"
           alt=""
           width={400}
-          height={0}
+          height={67}
           style={{ height: 'auto' }}
           className="hero-people"
         />

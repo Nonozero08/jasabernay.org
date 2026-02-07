@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "@/atoms/button/button";
 import { Code2Icon, DownloadIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion } from 'motion/react';
 
 function getOS() {
 	if (typeof window === "undefined" || typeof navigator === "undefined") return null;
@@ -44,20 +45,22 @@ export default function Hero() {
 			</div>
 
 			<div className="hero-title width">
-				<Image
-					src="/appicon-glass.png"
-					alt="Papillon"
-					width={96}
-					height={96}
-				/>
-				<h1>
+				<motion.div initial={{ opacity: 0, scale: 0.3 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1.2, type: "spring", bounce: 0.5, delay: 0.1 }}>
+					<Image
+						src="/appicon-glass.png"
+						alt="Papillon"
+						width={96}
+						height={96}
+					/>
+				</motion.div>
+				<motion.h1 initial={{ opacity: 0, scale: 0.9, y: 40 }} whileInView={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: 1, type: "spring", bounce: 0.5 }}>
 					Votre vie scolaire,<br />
 					avec de la magie en plus.
-				</h1>
-				<p className="hero-description">
+				</motion.h1>
+				<motion.p className="hero-description" initial={{ opacity: 0, scale: 0.9, y: 40 }} whileInView={{ opacity: 0.7, scale: 1, y: 0 }} transition={{ duration: 1, type: "spring", bounce: 0.5, delay: 0.1 }}>
 					Papillon est une alternative libre et open source aux applications de vie scolaire traditionnelles. Conçue, dévelopée et maintenue avec soin par des étudiants.
-				</p>
-				<div className="actions">
+				</motion.p>
+				<motion.div className="actions" initial={{ opacity: 0, scale: 0.9, y: 40 }} whileInView={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: 1, type: "spring", bounce: 0.5, delay: 0.2 }}>
 					<Button
 						href="/download"
 						value={os ? `Télécharger pour ${os}` : "Télécharger l'appli"}
@@ -71,8 +74,8 @@ export default function Hero() {
 						outlined
 						icon={<Code2Icon />}
 					/>
-				</div>
-				<div className="hero-image-container">
+				</motion.div>
+				<motion.div className="hero-image-container" initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.35, ease: [0.1, 0, 0, 1] }}>
 					<Image
 						src="/home-hand.png"
 						alt=""
@@ -80,7 +83,7 @@ export default function Hero() {
 						height={1200}
 						className="hero-image"
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)
