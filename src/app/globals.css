@@ -3,14 +3,14 @@
   --background-rgb: 255, 255, 255;
   --card: #ffffff;
   --card-rgb: 255, 255, 255;
-  --foreground: #3E1939;
-  --foreground-rgb: 62, 25, 57;
-  --foreground-darker: #2a0f2a;
-  --foreground-darker-rgb: 42, 15, 42;
-  --primary: #B1399F;
-  --primary-rgb: 177, 57, 159;
-  --primary-lighter: #d16bbf;
-  --primary-lighter-rgb: 209, 107, 191;
+  --foreground: #1F292E;
+  --foreground-rgb: 31, 41, 46;
+  --foreground-darker: #111827;
+  --foreground-darker-rgb: 17, 24, 39;
+  --primary: #29947A;
+  --primary-rgb: 41, 148, 122;
+  --primary-lighter: #48A98B;
+  --primary-lighter-rgb: 72, 169, 139;
   --support: #d28c00;
   --support-rgb: 210, 140, 0;
   --contrast: #bfe677;
@@ -80,12 +80,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Papillon", sans-serif;
+  font-family: "FixelText", sans-serif;
 }
 
 @supports (font-variation-settings: "wdth" 115) {
   * {
-    font-family: "Papillon-Variable", sans-serif;
+    font-family: "FixelText", sans-serif;
   }
 }
 
@@ -134,6 +134,7 @@ h1 {
 
 .section-heading .section-title {
   font-size: 2.6rem;
+  line-height: 2.9rem;
   letter-spacing: -0.02em;
   font-weight: 650;
   color: var(--foreground);

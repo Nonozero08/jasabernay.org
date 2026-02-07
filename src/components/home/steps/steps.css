@@ -27,7 +27,7 @@
 .steps-list .step {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   border-radius: 16px;
   background-color: var(--card);
   box-shadow: 0px 1px 6px rgba(var(--foreground-rgb), 0.1);
@@ -35,7 +35,7 @@
   transition: all 0.15s ease-out;
   position: relative;
   overflow: hidden;
-  align-items: center ;
+  align-items: center;
 }
 
 .steps-list .step:hover {
@@ -46,22 +46,11 @@
 
 .steps-list .step .step-image {
   width: 100%;
-  height: 179px;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
   object-position: top center;
   z-index: 10;
-}
-
-.step-color {
-  width: 720px;
-  aspect-ratio: 1;
-  border-radius: 1000px;
-  position: absolute;
-  top: -630px;
-  z-index: 0;
-  opacity: 0.1;
-  transform: scale(1.2);
-  transition: transform 0.1s ease-out;
+  mask-image: linear-gradient(to bottom, black 70%, rgba(0, 0, 0, 0.565) 78%, transparent 100%);
 }
 
 .step:hover .step-color {
@@ -79,8 +68,9 @@
 
 .steps-list .step .step-description {
   margin: 0 20px;
+  margin-top: 0px;
   width: calc(100% - 40px);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 1rem;
   font-weight: 500;
   color: rgba(var(--foreground-rgb), 0.7);

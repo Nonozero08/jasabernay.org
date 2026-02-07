@@ -39,6 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="preconnect" href="https://fonts.macpaw.com" />
+        <link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelText:300;400;500;600;700;800" />
+      </head>
       <body>
         <Navbar />
         <main>
