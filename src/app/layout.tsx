@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 
+import SmoothScrolling from "@/components/smooth-scrolling";
+
 export const metadata: Metadata = {
   title: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
   description: "L’application pensée pour l’école d’aujourd’hui & de demain",
@@ -39,9 +41,11 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <Navbar />
-          <main>
+        <main>
+          <SmoothScrolling>
             {children}
-          </main>
+          </SmoothScrolling>
+        </main>
         <Footer />
       </body>
     </html>
