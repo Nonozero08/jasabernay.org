@@ -1,7 +1,7 @@
 .cards {
   padding: 120px 0 !important;
   overflow: hidden;
-  background-color: #f8eaf6;
+  background-color: #e1ece9;
 }
 
 .cards-list {
@@ -17,7 +17,7 @@
   padding-right: calc((100vw - var(--max-width))/2 + 20px);
   scrollbar-width: none;
   -ms-overflow-style: none;
-} 
+}
 
 @media screen and (max-width: 1400px) {
   .cards-list {
@@ -31,12 +31,12 @@
   }
 }
 
-.cards-list::-webkit-scrollbar { 
-  display: none; 
+.cards-list::-webkit-scrollbar {
+  display: none;
 }
 
-.cards-list::-webkit-scrollbar-horizontal { 
-  display: none; 
+.cards-list::-webkit-scrollbar-horizontal {
+  display: none;
 }
 
 .card {

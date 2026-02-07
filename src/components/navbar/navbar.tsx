@@ -45,7 +45,10 @@ export default function Navbar() {
   React.useEffect(() => {
     const navbar = document.querySelector('header.navbar');
     const sentinels = Array.from(document.querySelectorAll('.navbar-dark-sentinel'));
-    if (!navbar || sentinels.length === 0) return;
+    if (!navbar || sentinels.length === 0) {
+      setIsDark(false);
+      return;
+    }
     let intersectingCount = 0;
     const observer = new window.IntersectionObserver(
       (entries) => {
@@ -59,7 +62,7 @@ export default function Navbar() {
     );
     sentinels.forEach(sentinel => observer.observe(sentinel));
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   const routes = [
     {
@@ -85,7 +88,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`navbar${scrollValue > 0 ? ' scrolled' : ''}${isDark ? ' dark' : ''}`}>
+      <header className={`navbar${scrollValue > 30 ? ' scrolled' : ''}${isDark ? ' dark' : ''}`}>
         <div className="width">
           <div className="nav-part nav-left">
             <Link href="/" style={{ height: 28 }}>
@@ -113,8 +116,6 @@ export default function Navbar() {
                       target={route.external ? "_blank" : "_self"}
                     >
                       {route.title}
-
-                      {route.external && " ↗"}
                     </Link>
                   </li>
                 ))}

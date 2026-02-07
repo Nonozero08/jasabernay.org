@@ -9,11 +9,11 @@
   right: 0;
   z-index: 1000;
   overflow: hidden;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out, border-color 0s ease-out;
 }
 
 .navbar.dark {
-  background-color: rgba(0,0,0, 0.6);
+  background-color: #090c1499;
   border-color: rgba(var(--background-rgb), 0.2);
 
   --foreground: #ffffff;
@@ -68,6 +68,13 @@ nav ul {
   gap: 12px;
 }
 
+nav ul li {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav ul li a {
   font-weight: 500;
   color: rgba(var(--foreground-rgb), 0.6);
@@ -81,11 +88,11 @@ nav ul li a {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
-    display: inline-block;
+  display: inline-block;
 }
 
 nav ul li a:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 nav ul li a.active {

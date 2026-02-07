@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 
+import SmoothScrolling from "@/components/smooth-scrolling";
+
 export const metadata: Metadata = {
   title: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
   description: "L’application pensée pour l’école d’aujourd’hui & de demain",
@@ -14,8 +16,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        width: 1280,
+        height: 720,
         alt: "Papillon - L’application pensée pour l’école d’aujourd’hui & de demain",
       },
     ],
@@ -37,11 +39,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="preconnect" href="https://fonts.macpaw.com" />
+        <link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelText:300;400;500;600;700;800" />
+      </head>
       <body>
         <Navbar />
-          <main>
+        <main>
+          <SmoothScrolling>
             {children}
-          </main>
+          </SmoothScrolling>
+        </main>
         <Footer />
       </body>
     </html>
