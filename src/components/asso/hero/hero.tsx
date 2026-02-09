@@ -63,7 +63,7 @@ export default function Hero() {
           className="hero-people"
         />
         <p className="hero-description">
-          Papillon, c'est aussi 6 étudiants passionnées qui cherchent toujours a créer l'inattendu pour fournir une expérience au delà des attentes.
+          Papillon, c'est aussi 6 étudiants passionnés qui cherchent toujours a créer l'inattendu pour fournir une expérience au delà des attentes.
         </p>
         <div className="hero-image-container">
           <Image
