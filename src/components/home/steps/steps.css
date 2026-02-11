@@ -12,10 +12,6 @@
   .steps-list {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .steps-list .step:first-child {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -59,6 +55,7 @@
 
 .steps-list .step .step-title {
   margin: 0 20px;
+  margin-top: 18px;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -70,9 +67,14 @@
   margin: 0 20px;
   margin-top: 0px;
   width: calc(100% - 40px);
-  margin-bottom: 18px;
   font-size: 1rem;
   font-weight: 500;
   color: rgba(var(--foreground-rgb), 0.7);
   line-height: 1.3rem;
+}
+
+.steps-list .step video {
+  width: 100%;
+  margin-top: 14px;
+  border-top: 1px solid rgba(var(--foreground-rgb), 0.17);
 }
