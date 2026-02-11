@@ -4,6 +4,7 @@ import Features from "@/components/home/features/features";
 import Hero from "@/components/home/hero/hero";
 import HowTo from "@/components/home/howto/howto";
 import Steps from "@/components/home/steps/steps";
+import Secured from "@/components/home/secured/secured";
 import Why from "@/components/home/why/why";
 import Head from "next/head";
 
@@ -12,7 +13,7 @@ export default function Home() {
     <div className="app">
       <Hero />
       <Steps />
-      <Cards />
+      <Secured />
       <Features />
       <FAQ />
       <Why />
