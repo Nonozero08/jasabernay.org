@@ -10,10 +10,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div className="app">
-      <Head>
-        <meta name="apple-itunes-app" content="app-id=6477761165" />
-      </Head>
-
       <Hero />
       <Steps />
       <Cards />
