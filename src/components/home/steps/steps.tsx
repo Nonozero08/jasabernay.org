@@ -1,7 +1,3 @@
-'use client';
-
-import Image from "next/image";
-
 import './steps.css';
 
 export default function Steps() {
