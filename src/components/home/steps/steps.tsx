@@ -18,7 +18,7 @@ export default function Steps() {
           <p className="step-description">
             Papillon se synchronise avec vos services scolaires comme Pronote ou ÉcoleDirecte et affiche les informations pertinentes en temps réel au cours de la journée.
           </p>
-          <video src="/steps/step_updates.webm" autoPlay muted loop />
+          <video src="/steps/step_updates.webm" autoPlay muted loop playsInline />
         </div>
 
         <div className="step">
@@ -28,7 +28,7 @@ export default function Steps() {
           <p className="step-description">
             Grâce aux fonctionnalités d’organisation et d’interaction avec l’établissement, ne manquez plus un seul devoir. Tout est fluide, clair et facile à accomplir.
           </p>
-          <video src="/steps/step_task.webm" autoPlay muted loop />
+          <video src="/steps/step_task.webm" autoPlay muted loop playsInline />
 
         </div>
 
@@ -39,7 +39,7 @@ export default function Steps() {
           <p className="step-description">
             Ne perdez plus de temps à tout calculer. L’interface Papillon affiche vos résultats clairement, et vous permet même de naviguer dans votre moyenne générale.
           </p>
-          <video src="/steps/step_graph2.webm" autoPlay muted loop />
+          <video src="/steps/step_graph2.webm" autoPlay muted loop playsInline />
 
         </div>
       </div>
