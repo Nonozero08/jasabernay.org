@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Papillon - Votre vie scolaire, avec de la magie en plus",
     description: "Papillon est une alternative libre et open source aux applications de vie scolaire traditionnelles. Conçue, dévelopée et maintenue avec soin par des étudiants.",
-    url: "https://papillon.bzh",
+    url: "https://jasabernay.com",
     siteName: "Papillon",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
-  metadataBase: new URL("https://papillon.bzh"),
+  metadataBase: new URL("https://jasabernay.com"),
   twitter: {
     card: "summary_large_image",
     title: "Papillon - Votre vie scolaire, avec de la magie en plus",
