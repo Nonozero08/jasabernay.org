@@ -125,7 +125,7 @@ export default function Navbar() {
           <div className="nav-part nav-right">
             <Button
               icon={<Download />}
-              value={width > 500 ? "Télécharger l'appli" : "Télécharger"}
+              value={width > 500 ? "Inscription" : "Télécharger"}
               color="primary"
               href="download"
               className='download-nav'
