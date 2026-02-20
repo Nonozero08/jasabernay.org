@@ -21,11 +21,11 @@ export default function NotFound() {
           color: "#666",
           fontWeight: 500,
         }}
-      >La page que vous recherchez n’existe pas ou est inaccessible.</p>
+      >Désolé, la page que vous recherchez n’existe pas ou est inaccessible.</p>
       <Spacer height={16} />
       <Button
         href="/"
-        value="Revenir à l’accueil"
+        value="Retour à l’accueil"
         color="foreground"
         icon={<Undo2 />}
       />
