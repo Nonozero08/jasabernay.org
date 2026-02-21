@@ -15,31 +15,27 @@ export default function Download() {
         />
       </div>
       <div className="cardDownloadSide">
-        <h2>Télécharger depuis les stores</h2>
+        <h2>Préinscription</h2>
         <p className="description">
-          Sélectionnez votre plateforme pour être redirigé vers le store approprié.
+          Pour préinscrire votre enfant, cliquez sur ce lien
         </p>
 
         <div className="storeButtons">
-          <a href="https://apps.apple.com/fr/app/papillon-lappli-scolaire/id6477761165" target="_blank" rel="noreferrer">
+          <a href="https://preinscriptions.ecoledirecte.com/?RNE=0271187U" target="_blank" rel="noreferrer">
             <img className="storeButton" src="/appstore_svg.svg" alt="Télécharger sur l'App Store" />
-          </a>
-
-          <a href="https://play.google.com/store/apps/details?id=xyz.getpapillon.app">
-            <img className="storeButton" src="/googleplay_png.png" alt="Télécharger sur Google Play" />
           </a>
         </div>
 
-        <h2>Versions bêta</h2>
+        <h2>Réglement intérieur</h2>
         <p className="description">
           Vous pouvez également rejoindre nos programmes de test pour accéder aux dernières fonctionnalités en avant-première.
         </p>
 
-        <a href="https://testflight.apple.com/join/AT2h5fj1" className="betaLink">
-          -&gt; Rejoindre le programme TestFlight pour iOS
+        <a href="https://www.test.jeannedarcsaintanselme.com/images/ReglementInterieurLycees_1718.pdf" className="betaLink">
+          -&gt; Règlement intérieur du Lycée
         </a>
         <a href="https://play.google.com/store/apps/details?id=xyz.getpapillon.app" className="betaLink">
-          -&gt; Rejoindre le programme Google Play Beta pour Android
+          -&gt; Règlement intérieur
         </a>
       </div>
     </div>
